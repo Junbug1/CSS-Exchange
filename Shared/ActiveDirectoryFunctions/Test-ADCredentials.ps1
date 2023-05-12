@@ -72,7 +72,7 @@ function Test-ADCredentials {
                 }
                 Invoke-CatchActionError $CatchActionFunction
             } catch {
-                Write-Verbose "Exception occured while connecting to LDAP server - unable to perform credential validation"
+                Write-Verbose "Exception occurred while connecting to LDAP server - unable to perform credential validation"
                 Invoke-CatchActionError $CatchActionFunction
             }
         }
